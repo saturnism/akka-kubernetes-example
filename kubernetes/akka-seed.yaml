@@ -56,12 +56,11 @@ spec:
 #              apiVersion: v1
 #              fieldPath: status.podIP
         - name: SEED_NODES
-          value: akka-seed-0.akka-seed,akka-seed-1.akka-seed
-        command: ["/bin/sh", "-c", "HOST_NAME=${POD_NAME}.akka-seed java -jar /app/app.jar"]
+          value: akka-seed-1.akka-seed
+        command: ["/bin/bash", "-c", 'test "${POD_NAME}" == "akka-seed-0" && timeout 1 bash -c "cat < /dev/null > /dev/tcp/akka-seed-1.akka-seed/2551" || export SEED_NODES="akka-seed-0.akka-seed,${SEED_NODES}"; HOST_NAME=${POD_NAME}.akka-seed java -jar /app/app.jar']
         livenessProbe:
           tcpSocket:
             port: 2551
         ports:
         - containerPort: 2551
           protocol: TCP
-
