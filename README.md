@@ -2,7 +2,7 @@ Introduction
 ============
 This is an example code and configuration to deploy Akka in Kubernetes using Statefulset for Akka seed nodes, and Deployment for Akka worker nodes.
 
-Special thanks to [Yohan](https://twitter.com/apnylle) and [Ola](https://twitter.com/gotoOla) for teaching me about Akka at JFokus 2017.
+Special thanks to [Johan](https://twitter.com/apnylle) and [Ola](https://twitter.com/gotoOla) for teaching me about Akka at JFokus 2017.
 
 Prerequisite
 ============
