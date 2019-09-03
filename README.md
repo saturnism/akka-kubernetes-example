@@ -4,6 +4,8 @@ This is an example code and configuration to deploy Akka in Kubernetes using Sta
 
 Special thanks to [Yohan](https://twitter.com/apnylle) and [Ola](https://twitter.com/gotoOla) for teaching me about Akka at JFokus 2017.
 
+See [Clustering Akka in Kubernetes](https://medium.com/google-cloud/clustering-akka-in-kubernetes-with-statefulset-and-deployment-459c0e05f2ea) article.
+
 Prerequisite
 ============
 You have a working Kubernetes 1.5 cluster. You can try [Minikube](https://github.com/kubernetes/minikube), or [Google Container Engine](https://cloud.google.com/container-engine/) for multi-node deployment.
