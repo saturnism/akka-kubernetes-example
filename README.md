@@ -20,6 +20,6 @@ Or, deploy everything in one shot: `kubectl apply -f kubernetes/
 Example Usage
 =============
 * Scale seed nodes: `kubectl scale statefulset akka-seed --replicas=3`
-* Scale worker nodes: `kubectl scale deployment akka-workers --replicas=4`
+* Scale worker nodes: `kubectl scale deployment akka-worker --replicas=4`
 * See logs: `kubectl logs -f akka-seed-0`
 
